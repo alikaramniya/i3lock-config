@@ -30,7 +30,7 @@ sudo pacman -U i3lock-color-2.13.c.5-1-x86_64.pkg.tar.zst
 ### بعد از نصب اتمام مراحل بالا و انجام نصب به ادرس پایین میریم و یک پوشه به اسم scripts میسازیم و بعد فایل lockرو داخل این پوشه قرار بدین
 
 ```
-mkidr -p .config/scripts
+mkdir -p .config/scripts
 ```
 
 
