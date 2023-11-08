@@ -4,11 +4,14 @@
 
 ![i3lock-color in action](examples/screenshot.png "Screenshot sample")
 
+## installation
+### [arch](#Arch)
+### [ubuntu](#Ubuntu)
 
-## Dependencies
 
+#### Dependencies
 
-### Arch Linux
+# Arch Linux
 
 #### برای نصب کردن توی محیط arch اول از همه با کامند پایین i3lock رو نصب کنید
 
@@ -47,3 +50,5 @@ bindsym $mod+x exec /home/ali/.config/scripts/lock
 ```
 
 ### الان شما یک بار i3 خود را refresh کنید و کلد mod+x$  را بزنید (دکمه پنجره بعلاوه x)
+
+# Ubuntu
