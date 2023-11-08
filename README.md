@@ -51,3 +51,35 @@ bindsym $mod+x exec /home/ali/.config/scripts/lock
 ### الان شما یک بار i3 خود را refresh کنید و کلد mod+x$  را بزنید (دکمه پنجره بعلاوه x)
 
 ### Ubuntu Linux
+
+#### توی قدم اول دستور پایین رو اجرا میکنیم که نیازمندی هاش نصب بشه
+```
+sudo apt install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
+```
+
+#### بعد از اجرا کردن این دستور میریم سراغ مخزن و اونو clone میکنیم
+```
+git clone https://github.com/Raymo111/i3lock-color.git
+cd i3lock-color
+```
+
+#### بعد یکی از دو دستور پایین رو اجرا میکنیم
+##### To build without installing, run:
+```
+./build.sh
+```
+
+##### To build AND install, run:
+```
+./install-i3lock-color.sh
+```
+
+#### بعد از انجام این کارها میریم توی پوشه examples و فایل lock.sh رو میبریم به ادرس پایین و توی فایل config هم برای اون یک کلید میان بر میسازیم
+‍‍‍‍
+```
+cp lock.sh ~/.config/scripts/
+```
+
+```
+bindsym $mod+x exec /home/ali/.config/scripts/lock.sh
+```
